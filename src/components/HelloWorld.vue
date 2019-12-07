@@ -1,5 +1,5 @@
 <template>
-  <div class="container col-6">
+  <div class="container col-6 pb-5">
     <div class="box">
       <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="#!">himechat</a>
@@ -13,13 +13,13 @@
           <form class="form-inline justify-content-center">
             <label class="sr-only" for="inlineFormInputName2">名前</label>
             <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="名前">
-            <button type="submit" class="btn btn-primary mb-2">生成</button>
+            <button type="submit" class="btn btn-outline-dark mb-2">生成</button>
           </form>
 
 
         <div class="sns mt-3">
-          <button class="btn btn-outline-dark mr-3">Twitterで送信する</button>
-          <button class="btn btn-outline-dark">LINEで送信する</button>
+          <button class="btn mr-3 twitter">Twitterで送信する</button>
+          <button class="btn line">LINEで送信する</button>
         </div>
       </div>
 
@@ -62,6 +62,7 @@ a {
   color: #555;
   font-size: 16px;
   background: #E6ECF0;
+  border-radius: 10px;
 }
 
 /* .balloon1-left:before {
@@ -77,6 +78,20 @@ a {
 .balloon1-left p {
   margin: 0;
   padding: 0;
+}
+
+.container {
+  background: white;
+}
+
+.twitter {
+  background-color: #39A1F3;
+  color: white;
+}
+
+.line {
+  background-color: #00C300;
+  color: white;
 }
 
 
