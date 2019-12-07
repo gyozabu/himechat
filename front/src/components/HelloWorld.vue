@@ -1,42 +1,71 @@
+  
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+  <div class="container col-6">
+    <div class="box">
+      <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#!">himechat</a>
+      </nav>
+
+      <div class="chat">
+        <div class="balloon1-left">
+          <p id="string">僕は、すごく心配だ、よ(T_T)💔😰(￣Д￣；；そんなときは、美味しいもの食べて、元気出さなきゃだね😚😘😄オイラは美陽チャン一筋ダヨ（￣▽￣）💤😪🙂</p>
+        </div>
+
+          <form class="form-inline justify-content-center">
+            <label class="sr-only" for="inlineFormInputName2">名前</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="name">
+            <button type="submit" class="btn btn-primary mb-2">生成</button><br>
+            <input type="range" id="emoji_range" min="0" max="10" step="1" v-model="emoji_slider"><p>絵文字レベル : {{ emoji_slider }}/p>
+            <input type="range" id="ten_range" min="0" max="10" step="1" value="0"><p>句読点レベル : <span id="num2">0</span></p>
+          </form>
+
+
+        <div class="sns mt-3">
+          <button class="btn btn-outline-dark mr-3">Twitterで送信する</button>
+          <button class="btn btn-outline-dark">LINEで送信する</button>
+          <input id="copyTarget" type="text" value="コピー対象の文言" readonly>
+          <button onclick="copyToClipboard()">Copy text</button>
+        </div>
+      </div>
+
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String
+  data: function() {
+    return {
+      emoji_slider: 1,
+    }
   }
 }
+
+// function string(){
+//   var string = document.getElementById('string');
+//   return string.innerHTML;
+// }
+
+// var elem = document.getElementById('emoji_range');
+// var target = document.getElementById('num1');
+// var rangeValue = function (elem, target) {
+//     return function(evt){
+//       target.innerHTML = elem.value;
+//     }
+//   }
+//   elem.addEventListener('input', rangeValue(elem, target));
+
+//   function copyToClipboard() {
+//             // コピー対象をJavaScript上で変数として定義する
+//             var copyTarget = document.getElementById("copyTarget");
+//             // コピー対象のテキストを選択する
+//             copyTarget.select();
+//             // 選択しているテキストをクリップボードにコピーする
+//             document.execCommand("Copy");
+//             // コピーをお知らせする
+//             alert("コピーできました！ : " + copyTarget.value);
+//         }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -54,5 +83,29 @@ li {
 }
 a {
   color: #42b983;
+}
+.balloon1-left {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #E6ECF0;
+}
+/* .balloon1-left:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 15px solid #e0edff;
+} */
+.balloon1-left p {
+  margin: 0;
+  padding: 0;
 }
 </style>
