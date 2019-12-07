@@ -7,13 +7,13 @@
 
       <div class="chat">
         <div class="balloon1-left">
-          <p>{{ msg }}</p>
+          <p>{{chat}}</p>
         </div>
 
           <form class="form-inline justify-content-center">
             <label class="sr-only" for="inlineFormInputName2">なまえ</label>
             <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="なまえ">
-            <button type="submit" class="btn btn-outline-dark mb-2">生成</button>
+            <button v-on:click="himechat" type="submit" class="btn btn-outline-dark mb-2">生成</button>
           </form>
 
 
@@ -35,10 +35,21 @@
 </template>
 
 <script>
+// import func from '../../vue-temp/vue-editor-bridge';
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data: function(){
+    return {
+      chat: 'いっけなーい🔪殺意殺意💦私、看護学生！🍳医療系の学科ばかりの大学で毎日勉強✨でもある日「看護師は皆医者狙うためになるんだろ」とかいうクソ男が現れてもう大変💦看護師の誇り高さ舐めてんじゃねぇぞ🔪連日実習行って毎日記録書いてみろ💥次回「お前へのトリアージは問答無用で黒」お楽しみに💖'
+    }
+  },
+  methods: {
+    himechat: function() {
+      this.chat = '僕は、すごく心配だ、よ(T_T)💔😰(￣Д￣；；そんなときは、美味しいもの食べて、元気出さなきゃだね😚😘😄オイラは美陽チャン一筋ダヨ（￣▽￣）💤😪🙂'
+    }
   }
 }
 </script>
