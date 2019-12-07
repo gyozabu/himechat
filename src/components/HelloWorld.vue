@@ -7,7 +7,7 @@
 
       <div class="chat">
         <div class="balloon1-left">
-          <p>僕は、すごく心配だ、よ(T_T)💔😰(￣Д￣；；そんなときは、美味しいもの食べて、元気出さなきゃだね😚😘😄オイラは美陽チャン一筋ダヨ（￣▽￣）💤😪🙂</p>
+          <p>{{ msg }}</p>
         </div>
 
           <form class="form-inline justify-content-center">
@@ -18,9 +18,15 @@
 
 
         <div class="sns mt-3">
-          <a class="btn twitter" href="https://twitter.com/intent/tweet?text=僕は、すごく心配だ、よ(T_T)💔😰(￣Д￣；；そんなときは、美味しいもの食べて、元気出さなきゃだね😚😘😄オイラは美陽チャン一筋ダヨ（￣▽￣）💤😪🙂" target="_blank">
+          <a class="btn twitter mr-3" href="https://twitter.com/intent/tweet?text=僕は、すごく心配だ、よ(T_T)💔😰(￣Д￣；；そんなときは、美味しいもの食べて、元気出さなきゃだね😚😘😄オイラは美陽チャン一筋ダヨ（￣▽￣）💤😪🙂" target="_blank">
             ツイートする
           </a>
+          <button class="btn line mr-3">
+            LINEで送る
+          </button>
+          <button class="btn btn-outline-dark copy">
+            Copy
+          </button>
         </div>
       </div>
 
