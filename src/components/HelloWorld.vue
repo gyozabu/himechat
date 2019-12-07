@@ -1,25 +1,25 @@
 <template>
-  <div class="container">
+  <div class="container col-6">
     <div class="box">
-      <nav class="navbar navbar-light bg-light">
+      <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="#!">himechat</a>
       </nav>
 
       <div class="chat">
         <div class="balloon1-left">
-          <p>こんにちは。これは例です。</p>
+          <p>僕は、すごく心配だ、よ(T_T)💔😰(￣Д￣；；そんなときは、美味しいもの食べて、元気出さなきゃだね😚😘😄オイラは美陽チャン一筋ダヨ（￣▽￣）💤😪🙂</p>
         </div>
-        
-        <form class="form-inline">
-          <label class="sr-only" for="inlineFormInputName2">名前</label>
-          <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="名前">
 
-          <button type="submit" class="btn btn-primary mb-2">生成</button>
-        </form>
+          <form class="form-inline justify-content-center">
+            <label class="sr-only" for="inlineFormInputName2">名前</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="名前">
+            <button type="submit" class="btn btn-primary mb-2">生成</button>
+          </form>
 
-        <div class="sns">
-          <button>Twitterで送信する</button>
-          <button>LINEで送信する</button>
+
+        <div class="sns mt-3">
+          <button class="btn btn-outline-dark mr-3">Twitterで送信する</button>
+          <button class="btn btn-outline-dark">LINEで送信する</button>
         </div>
       </div>
 
@@ -64,7 +64,7 @@ a {
   background: #E6ECF0;
 }
 
-.balloon1-left:before {
+/* .balloon1-left:before {
   content: "";
   position: absolute;
   top: 50%;
@@ -72,10 +72,12 @@ a {
   margin-top: -15px;
   border: 15px solid transparent;
   border-right: 15px solid #e0edff;
-}
+} */
 
 .balloon1-left p {
   margin: 0;
   padding: 0;
 }
+
+
 </style>
