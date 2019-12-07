@@ -2,7 +2,7 @@
   <div class="container col-6 pb-5">
     <div class="box">
       <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#!">himechat</a>
+        <div class="navbar-brand">himechat</div>
       </nav>
 
       <div class="chat">
@@ -10,15 +10,14 @@
           <p>{{chat}}</p>
         </div>
 
-          <form class="form-inline justify-content-center">
             <label class="sr-only" for="inlineFormInputName2">なまえ</label>
             <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="なまえ">
-            <button v-on:click="himechat" type="submit" class="btn btn-outline-dark mb-2">生成</button>
-          </form>
+            <button type="submit" class="btn btn-outline-dark mb-2" v-on:click="himechat">生成</button>
+
 
 
         <div class="sns mt-3">
-          <a class="btn twitter mr-3" href="https://twitter.com/intent/tweet?text=僕は、すごく心配だ、よ(T_T)💔😰(￣Д￣；；そんなときは、美味しいもの食べて、元気出さなきゃだね😚😘😄オイラは美陽チャン一筋ダヨ（￣▽￣）💤😪🙂" target="_blank">
+          <a class="btn twitter mr-3" href="#" target="_blank">
             ツイートする
           </a>
           <button class="btn line mr-3">
@@ -36,6 +35,8 @@
 
 <script>
 // import func from '../../vue-temp/vue-editor-bridge';
+import axios from 'axios'
+
 export default {
   name: 'HelloWorld',
   props: {
@@ -48,7 +49,11 @@ export default {
   },
   methods: {
     himechat: function() {
-      this.chat = '僕は、すごく心配だ、よ(T_T)💔😰(￣Д￣；；そんなときは、美味しいもの食べて、元気出さなきゃだね😚😘😄オイラは美陽チャン一筋ダヨ（￣▽￣）💤😪🙂'
+      axios
+        .get('https://himechat-api.herokuapp.com/')
+        .then((res) => {
+          console.log(res)
+        })
     }
   }
 }
