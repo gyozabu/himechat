@@ -11,15 +11,16 @@
         </div>
 
           <form class="form-inline justify-content-center">
-            <label class="sr-only" for="inlineFormInputName2">名前</label>
-            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="名前">
+            <label class="sr-only" for="inlineFormInputName2">なまえ</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="なまえ">
             <button type="submit" class="btn btn-outline-dark mb-2">生成</button>
           </form>
 
 
         <div class="sns mt-3">
-          <button class="btn mr-3 twitter">Twitterで送信する</button>
-          <button class="btn line">LINEで送信する</button>
+          <a class="btn twitter" href="https://twitter.com/intent/tweet?text=僕は、すごく心配だ、よ(T_T)💔😰(￣Д￣；；そんなときは、美味しいもの食べて、元気出さなきゃだね😚😘😄オイラは美陽チャン一筋ダヨ（￣▽￣）💤😪🙂" target="_blank">
+            ツイートする
+          </a>
         </div>
       </div>
 
