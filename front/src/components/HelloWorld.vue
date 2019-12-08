@@ -13,9 +13,39 @@
             <label class="sr-only" for="inlineFormInputName2">なまえ</label>
             <input type="text" class="form mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="なまえ">
             <button type="submit" class="btn btn-outline-dark mb-2" v-on:click="himechat">生成</button><br>
-            <input type="range"  min="0" max="10" step="1" v-model="emoji_slider"><p>絵文字レベル : {{ emoji_slider }}</p>
-            <input type="range"  min="0" max="3" step="1" v-model="manji_slider"><p>卍レベル : {{ manji_slider }}</p>
-            <input type="range"  min="0" max="3" step="1" v-model="kutouten_slider"><p>句読点レベル : {{kutouten_slider}}</p>
+            <label for="emoji">絵文字レベル
+              <select v-model="emoji">
+                <option disabled value="選択"></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+            </label><br/>
+
+            <label for="manji">卍レベル
+              <select v-model="manji">
+                <option disabled value="選択"></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </label><br/>
+
+            <label for="kutouten">句読点レベル
+              <select v-model="kutouten">
+                <option disabled value="選択"></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </label>
 
 
 
@@ -48,9 +78,9 @@ export default {
   data: function(){
     return {
       chat: 'いっけなーい🔪殺意殺意💦私、看護学生！🍳医療系の学科ばかりの大学で毎日勉強✨でもある日「看護師は皆医者狙うためになるんだろ」とかいうクソ男が現れてもう大変💦看護師の誇り高さ舐めてんじゃねぇぞ🔪連日実習行って毎日記録書いてみろ💥次回「お前へのトリアージは問答無用で黒」お楽しみに💖',
-      emoji_slider: 3,
-      manji_slider: 1,
-      kutouten_slider: 1
+      emoji: 3,
+      manji: 1,
+      kutouten: 1
     }
   },
   methods: {
