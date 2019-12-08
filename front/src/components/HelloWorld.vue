@@ -8,7 +8,7 @@
     <div class="container">
       <div class="chat">
         <div class="balloon1-left">
-          <p id="target" style="white-space:pre-wrap; word-wrap:break-word;">{{chat}}</p>
+          <p id="target" style="white-space:pre-wrap; word-wrap:break-word; text-align:left">{{chat}}</p>
         </div>
 
         <label class="sr-only" for="inlineFormInputName2">なまえ</label>
