@@ -8,7 +8,7 @@
     <div class="container">
       <div class="chat">
         <div class="balloon1-left">
-          <p id="target">{{chat}}</p>
+          <p id="target" style="white-space:pre-wrap; word-wrap:break-word;">{{chat}}</p>
         </div>
 
         <label class="sr-only" for="inlineFormInputName2">なまえ</label>
@@ -88,7 +88,12 @@ export default {
   data: function() {
     return {
       chat:
-        "いっけなーい🔪殺意殺意💦私、看護学生！🍳医療系の学科ばかりの大学で毎日勉強✨でもある日「看護師は皆医者狙うためになるんだろ」とかいうクソ男が現れてもう大変💦看護師の誇り高さ舐めてんじゃねぇぞ🔪連日実習行って毎日記録書いてみろ💥次回「お前へのトリアージは問答無用で黒」お楽しみに💖",
+        `【使い方】
+        ・「なまえ」に名前を入力
+        ・絵文字・卍・句読点のレベルを設定
+        ・卍レベルを上げるとぴえん🥺とか出てきます
+        ・「生成」をタップ！
+        ・ツイートしたりLINEで共有したりしよう！`,
       name: "",
       emoji: 3,
       manji: 1,
