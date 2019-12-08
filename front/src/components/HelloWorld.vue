@@ -17,6 +17,7 @@
             <label for="emoji">絵文字レベル
               <select v-model="emoji">
                 <option disabled value="選択"></option>
+                <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -33,6 +34,7 @@
             <label for="manji">卍レベル
               <select v-model="manji">
                 <option disabled value="選択"></option>
+                <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -42,6 +44,7 @@
             <label for="kutouten">句読点レベル
               <select v-model="kutouten">
                 <option disabled value="選択"></option>
+                <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
