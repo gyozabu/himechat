@@ -66,22 +66,7 @@ export default {
     }
   }
 }
-export default {
-  name: 'HelloWorld',
-  data: function() {
-    return {
-      emoji_slider: 3,
-      kutouten_slider: 3
-    }
-  },
-  methods:{
-    witeToClipboard() {
-      const copyText = this.$el.querySelector('#target').textContent
-      navigator.clipboard
-        .writeText(copyText)
-    }
-  }
-}
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
