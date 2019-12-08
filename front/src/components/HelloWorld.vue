@@ -106,7 +106,7 @@ export default {
 
       axios
         .get(
-          "http://localhost:8080" +
+          "https://himechat-api.herokuapp.com/" +
             "?" +
             "name=" +
             this.name +
