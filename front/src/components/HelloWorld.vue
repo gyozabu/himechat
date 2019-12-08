@@ -47,7 +47,6 @@
                 <option value="3">3</option>
               </select>
             </label>
-            <button type="submit" class="btn btn-outline-dark" v-on:click="himechat">生成</button><br>
 
 
 
