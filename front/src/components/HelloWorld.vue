@@ -7,11 +7,7 @@
 
       <div class="chat">
         <div class="balloon1-left">
-<<<<<<< HEAD
           <p id="target">{{chat}}</p>
-=======
-          <p>{{chat}}</p>
->>>>>>> master
         </div>
 
             <label class="sr-only" for="inlineFormInputName2">なまえ</label>
