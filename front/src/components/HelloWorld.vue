@@ -2,16 +2,16 @@
   <div class="container col-6 pb-5">
     <div class="box">
       <nav class="navbar navbar-dark bg-dark">
-        <div class="navbar-brand">himechat</div>
+        <div class="navbar-brand"><p>himechat</p></div>
       </nav>
 
       <div class="chat">
         <div class="balloon1-left">
-          <p>{{chat}}</p>
+          <p id="target">{{chat}}</p>
         </div>
 
             <label class="sr-only" for="inlineFormInputName2">なまえ</label>
-            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="なまえ">
+            <input type="text" class="form mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="なまえ">
             <button type="submit" class="btn btn-outline-dark mb-2" v-on:click="himechat">生成</button>
             <input type="range"  min="0" max="3" step="1" v-model="manji_slider"><p>卍レベル : {{ manji_slider }}</p>
             <input type="range"  min="0" max="3" step="1" v-model="kutouten_slider"><p>句読点レベル : {{kutouten_slider}}</p>
@@ -26,7 +26,7 @@
             LINEで送る
           </button>
           <button class="btn btn-outline-dark copy" v-on:click="witeToClipboard">
-            <v-icon>Copy</v-icon>>
+            <v-icon>Copy</v-icon>
           </button>
         </div>
       </div>
@@ -47,7 +47,7 @@ export default {
   data: function(){
     return {
       chat: 'いっけなーい🔪殺意殺意💦私、看護学生！🍳医療系の学科ばかりの大学で毎日勉強✨でもある日「看護師は皆医者狙うためになるんだろ」とかいうクソ男が現れてもう大変💦看護師の誇り高さ舐めてんじゃねぇぞ🔪連日実習行って毎日記録書いてみろ💥次回「お前へのトリアージは問答無用で黒」お楽しみに💖',
-      emoji_slider: 3,
+      manji_slider: 3,
       kutouten_slider: 3
     }
   },
@@ -125,6 +125,25 @@ a {
 .line {
   background-color: #00C300;
   color: white;
+}
+
+.form{
+  display: inline-block;
+    width: 70%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
 }
 
 
