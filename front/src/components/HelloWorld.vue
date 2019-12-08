@@ -23,9 +23,9 @@
           <a class="btn twitter mr-3" href="#" target="_blank">
             ツイートする
           </a>
-          <button class="btn line mr-3">
+          <a class="btn line mr-3" href="https://line.me/R/msg/text">
             LINEで送る
-          </button>
+          </a>
           <button class="btn btn-outline-dark copy" v-on:click="witeToClipboard">
             <v-icon>Copy</v-icon>
           </button>
