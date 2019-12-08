@@ -1,9 +1,9 @@
 <template>
-  <div class="container col-6 pb-5">
-    <div class="box">
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="navbar-brand"><p>himechat</p></div>
-      </nav>
+  <div class="pb-5">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="navbar-brand"><p>himechat</p></div>
+    </nav>
+    <div class="container">
 
       <div class="chat">
         <div class="balloon1-left">
@@ -12,7 +12,7 @@
 
             <label class="sr-only" for="inlineFormInputName2">なまえ</label>
             <input type="text" class="form mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="なまえ">
-            <button type="submit" class="btn btn-outline-dark mb-2" v-on:click="himechat">生成</button><br>
+            <button type="submit" class="btn btn-outline-dark" v-on:click="himechat">生成</button><br>
             <input type="range"  min="0" max="10" step="1" v-model="emoji_slider"><p>絵文字レベル : {{ emoji_slider }}</p>
             <input type="range"  min="0" max="3" step="1" v-model="manji_slider"><p>卍レベル : {{ manji_slider }}</p>
             <input type="range"  min="0" max="3" step="1" v-model="kutouten_slider"><p>句読点レベル : {{kutouten_slider}}</p>
