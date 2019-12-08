@@ -1,7 +1,7 @@
 <template>
   <div class="pb-5">
     <nav class="navbar navbar-dark bg-dark">
-      <div class="navbar-brand"><p>himechat</p></div>
+      <div class="navbar-brand mx-auto"><p>himechat</p></div>
     </nav>
     <div class="container">
 
