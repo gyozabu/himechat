@@ -62,7 +62,7 @@ export default {
         })
     },
     tweet: function(){
-      window.open().location.href = ("https://twitter.com/intent/tweet?text=" + this.chat);
+      window.open().location.href = ("https://twitter.com/intent/tweet?text=" + this.chat + '&hashtags=himechat');
     },
     witeToClipboard() {
       const copyText = this.$el.querySelector('#target').textContent
