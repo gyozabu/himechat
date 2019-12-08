@@ -1,9 +1,9 @@
 <template>
-  <div class="container pb-5">
-    <div class="box">
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="navbar-brand"><p>himechat</p></div>
-      </nav>
+  <div class="pb-5">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="navbar-brand"><p>himechat</p></div>
+    </nav>
+    <div class="container">
 
       <div class="chat">
         <div class="balloon1-left">
