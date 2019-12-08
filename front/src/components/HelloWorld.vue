@@ -14,8 +14,6 @@
             <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="なまえ">
             <button type="submit" class="btn btn-outline-dark mb-2" v-on:click="himechat">生成</button>
 
-
-
         <div class="sns mt-3">
           <a class="btn twitter mr-3" href="#" target="_blank">
             ツイートする
@@ -39,9 +37,6 @@ import axios from 'axios'
 
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String
-  },
   data: function(){
     return {
       chat: 'いっけなーい🔪殺意殺意💦私、看護学生！🍳医療系の学科ばかりの大学で毎日勉強✨でもある日「看護師は皆医者狙うためになるんだろ」とかいうクソ男が現れてもう大変💦看護師の誇り高さ舐めてんじゃねぇぞ🔪連日実習行って毎日記録書いてみろ💥次回「お前へのトリアージは問答無用で黒」お楽しみに💖'
@@ -51,6 +46,7 @@ export default {
     himechat: function() {
       axios
         .get('https://himechat-api.herokuapp.com/')
+        // .get('https://jsonplaceholder.typicode.com/users')
         .then((res) => {
           console.log(res)
         })
@@ -117,6 +113,4 @@ a {
   color: white;
 }
 
-
 </style>
-
