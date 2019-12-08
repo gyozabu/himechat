@@ -20,7 +20,7 @@
 
 
         <div class="sns mt-3">
-          <a class="btn twitter mr-3" href="#" target="_blank">
+          <a class="btn twitter mr-3" v-on:click="tweet" target="_blank">
             ツイートする
           </a>
           <button class="btn line mr-3">
@@ -60,6 +60,9 @@ export default {
         .then((res) => {
           console.log(res)
         })
+    },
+    tweet: function(){
+      window.open().location.href = ("https://twitter.com/intent/tweet?text=" + this.chat);
     },
     witeToClipboard() {
       const copyText = this.$el.querySelector('#target').textContent
