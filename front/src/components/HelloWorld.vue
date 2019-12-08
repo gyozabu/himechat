@@ -8,7 +8,7 @@
 
       <div class="chat">
         <div class="balloon1-left">
-          <p id="target">僕は、すごく心配だ、よ(T_T)💔😰(￣Д￣；；そんなときは、美味しいもの食べて、元気出さなきゃだね😚😘😄オイラは美陽チャン一筋ダヨ（￣▽￣）💤😪🙂</p>
+          <p id="target">{{chat}}</p>
         </div>
 
           <form class="form-inline justify-content-center">
