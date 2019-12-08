@@ -1,9 +1,9 @@
 <template>
-  <div class="container col-6 pb-5">
-    <div class="box">
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="navbar-brand"><p>himechat</p></div>
-      </nav>
+  <div class="pb-5">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="navbar-brand"><p>himechat</p></div>
+    </nav>
+    <div class="container">
 
       <div class="chat">
         <div class="balloon1-left">
@@ -12,6 +12,7 @@
 
             <label class="sr-only" for="inlineFormInputName2">なまえ</label>
             <input type="text" class="form mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="なまえ">
+
             <button type="submit" class="btn btn-outline-dark mb-2" v-on:click="himechat">生成</button><br>
             <label for="emoji">絵文字レベル
               <select v-model="emoji">
@@ -46,6 +47,8 @@
                 <option>3</option>
               </select>
             </label>
+            <button type="submit" class="btn btn-outline-dark" v-on:click="himechat">生成</button><br>
+
 
 
 
