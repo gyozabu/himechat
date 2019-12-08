@@ -13,6 +13,8 @@
             <label class="sr-only" for="inlineFormInputName2">なまえ</label>
             <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="なまえ">
             <button type="submit" class="btn btn-outline-dark mb-2" v-on:click="himechat">生成</button>
+            <input type="range" id="emoji_range" min="0" max="10" step="1" v-model="emoji_slider"><p>絵文字レベル : {{ emoji_slider }}</p>
+            <input type="range" id="ten_range" min="0" max="10" step="1" v-model="kutouten_slider"><p>句読点レベル : {{kutouten_slider}}</p>
 
 
 
@@ -23,8 +25,8 @@
           <button class="btn line mr-3">
             LINEで送る
           </button>
-          <button class="btn btn-outline-dark copy">
-            Copy
+          <button class="btn btn-outline-dark copy" v-on:click="witeToClipboard">
+            <v-icon>Copy</v-icon>>
           </button>
         </div>
       </div>
@@ -57,6 +59,22 @@ export default {
     }
   }
 }
+// export default {
+//   name: 'HelloWorld',
+//   data: function() {
+//     return {
+//       emoji_slider: 3,
+//       kutouten_slider: 3
+//     }
+//   },
+//   methods:{
+//     witeToClipboard() {
+//       const copyText = this.$el.querySelector('#target').textContent
+//       navigator.clipboard
+//         .writeText(copyText)
+//     }
+//   }
+// }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
