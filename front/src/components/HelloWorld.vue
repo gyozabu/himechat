@@ -1,5 +1,5 @@
 <template>
-  <div class="container col-6 pb-5">
+  <div class="container pb-5">
     <div class="box">
       <nav class="navbar navbar-dark bg-dark">
         <div class="navbar-brand"><p>himechat</p></div>
