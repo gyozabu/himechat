@@ -130,7 +130,7 @@ export default {
       window.open().location.href =
         "https://twitter.com/intent/tweet?text=" +
         this.chat +
-        "&hashtags=himechat";
+        "&hashtags=himechat"+" https://himechat-gyoza.web.app";
     },
     line: function() {
       window.open().location.href = "https://line.me/R/msg/text/?" + this.chat;
