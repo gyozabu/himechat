@@ -129,7 +129,7 @@ export default {
     tweet: function() {
       window.open().location.href =
         "https://twitter.com/intent/tweet?text=" +
-        this.chat +
+        encodeURIComponent(this.chat) +
         "&hashtags=himechat"+"&url=https://himechat-gyoza.web.app";
     },
     line: function() {
